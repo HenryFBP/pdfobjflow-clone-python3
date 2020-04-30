@@ -94,7 +94,7 @@ if __name__ == '__main__':
     parser.add_argument("--inputfile", default=None,
                         help="Filepath to read PDF output from. "
                              "If this is not set, we read from stdin.")
-    parser.add_argument("--outputfilename", default='pdfobjflow',
+    parser.add_argument("--outputfilename", default='pdfobjflow3',
                         help="The name of the .dot and .png file to output.")
     parser.add_argument("--outputfolder", default='out',
                         help="The folder to save files to.")
