@@ -30,9 +30,11 @@ try:
     import pydot
 except:
     print("You must install pydot:")
-    print("  sudo aptitude install python-pydot")
-    print("or,")
-    print("https://www.graphviz.org/")
+    print("    sudo aptitude install python-pydot")
+    print("or, for windows,")
+    print("    https://www.graphviz.org/")
+    print("and, for windows,")
+    print("    pip install pydot")
     sys.exit()
 
 
