@@ -25,6 +25,8 @@ import re
 import sys
 from typing import List
 
+TEST = True
+
 try:
     import pydot
 except:
@@ -42,26 +44,25 @@ def pdf_output_to_graph_output(pdf_data: List[str]) -> List[str]:
     """
     o = ["digraph G {"]
 
-    for l in f:
+    for l in pdf_data:
         m1 = re.match(r"obj (\w+) (\w+)", l)
         m2 = re.match(r" Referencing: (.*)", l)
         if m1:
-            obj = "%s.%s" % m1.group(1, 2)
+            obj = '%s.%s' % m1.group(1, 2)
         if m2:
             ref = filter(None, m2.group(1).split(", "))
             ref = [x for x in ref]
             if len(ref) == 0:
-                o.append("\"%s\";" % obj)
+                o.append("\"%s\";\n" % obj)
             else:
                 for r in ref:
-                    o.append("\"%s\"->\"%s\";" % (obj, r.replace(" ", ".").replace(".R", "")))
+                    o.append("\"%s\"->\"%s\";\n" % (obj, r.replace(" ", ".").replace(".R", "")))
 
     o.append("}")
 
     return o
 
 
-TEST = True
 if TEST:
     with open('example_pdf_output.txt', 'r') as file:
         f = file.readlines()
@@ -70,24 +71,9 @@ else:
 
 o = open("pdfobjflow.dot", "w")
 
-o.write("digraph G {\n")
+o.write('\n'.join(pdf_output_to_graph_output(f)))
 
-for l in f:
-    m1 = re.match(r"obj (\w+) (\w+)", l)
-    m2 = re.match(r" Referencing: (.*)", l)
-    if m1:
-        obj = "%s.%s" % m1.group(1, 2)
-    if m2:
-        ref = filter(None, m2.group(1).split(", "))
-        ref = [x for x in ref]
-        if len(ref) == 0:
-            o.write("\"%s\";\n" % obj)
-        else:
-            for r in ref:
-                o.write("\"%s\"->\"%s\";\n" % (obj, r.replace(" ", ".").replace(".R", "")))
-
-o.write("}")
 o.close()
 
-(graph,) = pydot.graph_from_dot_file('pdfobjflow.dot')  # tuple assignment thingy to avoid a list
+graph = pydot.graph_from_dot_file('pdfobjflow.dot')[0]  # unpack list
 graph.write_png('pdfobjflow.png')
