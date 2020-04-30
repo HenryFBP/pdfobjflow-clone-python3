@@ -25,7 +25,7 @@ Clone the repo and add it to your System PATH variable!
 Note: The below example requires pdf-parser.
 <https://blog.didierstevens.com/programs/pdf-tools/>
     
-`./pdf-parser.py | ./pdfobjflow3.py`
+`./pdf-parser.py data/sample.pdf | ./pdfobjflow3.py`
     
 `./pdfobjflow3.py --inputfile ./data/example_malware_pdf_output.txt`
         
