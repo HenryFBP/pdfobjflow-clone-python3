@@ -1,4 +1,4 @@
-# pdfobjflow-python3
+# pdfobjflow3-python3
 
 Taken from <https://bitbucket.org/sebastiendamaye/pdfobjflow/src/master/>, which is Python2 code that does not work with Python 3.
 
@@ -16,7 +16,7 @@ Clone the repo and add it to your System PATH variable!
 
 ## Testing
 
-`cat ./data/example_malware_pdf_output.txt | ./pdfobjflow.py`
+`cat ./data/example_malware_pdf_output.txt | ./pdfobjflow3.py`
     
 Note: The below example requires pdf-parser.
 <https://blog.didierstevens.com/programs/pdf-tools/>
