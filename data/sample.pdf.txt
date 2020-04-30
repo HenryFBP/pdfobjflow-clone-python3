@@ -1,0 +1,138 @@
+PDF Comment '%PDF-1.3\r\n'
+
+PDF Comment '%\xe2\xe3\xcf\xd3\r\n'
+
+obj 1 0
+ Type: /Catalog
+ Referencing: 2 0 R, 3 0 R
+
+  <<
+    /Type /Catalog
+    /Outlines 2 0 R
+    /Pages 3 0 R
+  >>
+
+
+obj 2 0
+ Type: /Outlines
+ Referencing:
+
+  <<
+    /Type /Outlines
+    /Count 0
+  >>
+
+
+obj 3 0
+ Type: /Pages
+ Referencing: 4 0 R, 6 0 R
+
+  <<
+    /Type /Pages
+    /Count 2
+    /Kids [ 4 0 R 6 0 R ]
+  >>
+
+
+obj 4 0
+ Type: /Page
+ Referencing: 3 0 R, 9 0 R, 8 0 R, 5 0 R
+
+  <<
+    /Type /Page
+    /Parent 3 0 R
+    /Resources
+      <<
+        /Font
+          <<
+            /F1 9 0 R
+          >>
+        /ProcSet 8 0 R
+      >>
+    /MediaBox [0 0 612.0000 792.0000]
+    /Contents 5 0 R
+  >>
+
+
+obj 5 0
+ Type:
+ Referencing:
+ Contains stream
+
+  <<
+    /Length 1074
+  >>
+
+
+obj 6 0
+ Type: /Page
+ Referencing: 3 0 R, 9 0 R, 8 0 R, 7 0 R
+
+  <<
+    /Type /Page
+    /Parent 3 0 R
+    /Resources
+      <<
+        /Font
+          <<
+            /F1 9 0 R
+          >>
+        /ProcSet 8 0 R
+      >>
+    /MediaBox [0 0 612.0000 792.0000]
+    /Contents 7 0 R
+  >>
+
+
+obj 7 0
+ Type:
+ Referencing:
+ Contains stream
+
+  <<
+    /Length 676
+  >>
+
+
+obj 8 0
+ Type:
+ Referencing:
+
+
+
+obj 9 0
+ Type: /Font
+ Referencing:
+
+  <<
+    /Type /Font
+    /Subtype /Type1
+    /Name /F1
+    /BaseFont /Helvetica
+    /Encoding /WinAnsiEncoding
+  >>
+
+
+obj 10 0
+ Type:
+ Referencing:
+
+  <<
+    /Creator '(Rave \\(http://www.nevrona.com/rave\\))'
+    /Producer (Nevrona Designs)
+    /CreationDate (D:20060301072826)
+  >>
+
+
+xref
+
+trailer
+  <<
+    /Size 11
+    /Root 1 0 R
+    /Info 10 0 R
+  >>
+
+startxref 2714
+
+PDF Comment '%%EOF\r\n'
