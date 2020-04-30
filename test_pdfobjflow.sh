@@ -1,1 +1,0 @@
-cat ./example_pdf_output.txt | ./pdfobjflow.py
