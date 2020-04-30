@@ -2,7 +2,7 @@
 
 Taken from <https://bitbucket.org/sebastiendamaye/pdfobjflow/src/master/>, which is Python2 code that does not work with Python 3.
 
-Graph of [malware PDF output from pdf-parser](/data/example_malware_pdf_output.txt):
+Graph of [malware PDF output from pdf-parser](/data/example_malware_pdf_output.txt) (SAFE TO CLICK!):
 
 ![](img/example_malware_pdf_graph.png)
 
