@@ -16,17 +16,17 @@ Clone the repo and add it to your System PATH variable!
 
 ## Testing
 
-`cat ./data/example_pdf_output.txt | ./pdfobjflow.py`
+`cat ./data/example_malware_pdf_output.txt | ./pdfobjflow.py`
     
 Note: The below example requires pdf-parser.
 <https://blog.didierstevens.com/programs/pdf-tools/>
     
 `./pdf-parser.py | ./pdfobjflow3.py`
     
-`./pdfobjflow3.py --inputfile ./data/example_pdf_output.txt`
+`./pdfobjflow3.py --inputfile ./data/example_malware_pdf_output.txt`
         
 
-`./pdfobjflow3.py --inputfile ./data/example_pdf_output.txt --outputfilename cool_output --outputfolder out/test`
+`./pdfobjflow3.py --inputfile ./data/example_malware_pdf_output.txt --outputfilename cool_output --outputfolder out/test`
 
 ## Notes from original dev
 
