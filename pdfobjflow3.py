@@ -91,11 +91,14 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser()
+
     parser.add_argument("--inputfile", default=None,
                         help="Filepath to read PDF output from. "
                              "If this is not set, we read from stdin.")
+
     parser.add_argument("--outputfilename", default='pdfobjflow3',
                         help="The name of the .dot and .png file to output.")
+
     parser.add_argument("--outputfolder", default='out',
                         help="The folder to save files to.")
 
@@ -114,10 +117,10 @@ if __name__ == '__main__':
 
     if STDIN:
         convert_pdf_output_list_to_dotfile(sys.stdin.readlines(),
-                                           os.path.join(OUTPUT_FOLDER, "pdfobjflow.dot"))
+                                           os.path.join(OUTPUT_FOLDER, OUTPUT_FILENAME + ".dot"))
     else:
         convert_pdf_output_file_to_dotfile(INPUT_PDF_DATA_FILE,
-                                           os.path.join(OUTPUT_FOLDER, "pdfobjflow.dot"))
+                                           os.path.join(OUTPUT_FOLDER, OUTPUT_FILENAME + ".dot"))
 
-    graph = pydot.graph_from_dot_file(os.path.join(OUTPUT_FOLDER, "pdfobjflow.dot"))[0]  # unpack list
-    graph.write_png(os.path.join(OUTPUT_FOLDER, "pdfobjflow.png"))
+    graph = pydot.graph_from_dot_file(os.path.join(OUTPUT_FOLDER, OUTPUT_FILENAME + ".dot"))[0]  # unpack list
+    graph.write_png(os.path.join(OUTPUT_FOLDER, OUTPUT_FILENAME + ".png"))
