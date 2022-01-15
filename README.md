@@ -35,3 +35,7 @@ Note: The below example requires pdf-parser.
 ## Notes from original dev
 
 > This program is meant to be used with pdf-parser from Didier Stevens. It reads the output from pdf-parser and creates the map of the objects flows under the form of a DOT file. You can then use the dot utility to export an image (e.g. PNG file).
+
+## Used
+
+I use this here: <https://github.com/HenryFBP/VagrantPackerFiles/tree/master/vagrant/windows-10-flare-vm>
